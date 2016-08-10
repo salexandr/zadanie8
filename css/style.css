@@ -255,7 +255,7 @@ aside span {
 	background-color: #f9f9f9;
 	height: 485px;	
 	border-bottom: 1px solid #e6e6e6;
-		overflow:hidden;
+	overflow:hidden;
 }
 
 .dialog__wrapper {
@@ -404,11 +404,12 @@ aside span {
 
 .comments__description {
 	display: inline-block;
-    width: 30%;	
+    width: 29%;	
 	margin: 93px 0px 0px;
     vertical-align: top;
-	height: 210px;
-    overflow: hidden;
+	height: 61%;
+	text-overflow:ellipsis;	
+	overflow:hidden;
 }
 
 .comments__description a{
@@ -463,6 +464,8 @@ aside span {
 	color: #888888;	
 	margin-top: 10px;
 	line-height:24px;
+	text-overflow:ellipsis;	
+	overflow:hidden;
 }
 
 /* footer */
@@ -505,7 +508,41 @@ footer {
 
 /* footer and */
 
+@media (max-width:900px){
+	
+	.aside__description {
+        width: 27%;
+	    height: 65%;
+	    text-overflow:ellipsis;	
+	    overflow:hidden;
+	}
+	
+	.aside__description p{
+        width: 75%;
+	    height: 65%;
+	    text-overflow:ellipsis;	
+	    overflow:hidden;
+	}
+	
+	.dialog__content p{
+	    height: 75%;
+		text-overflow:ellipsis;	
+	    overflow:hidden;
+	}
+	
+}
+
 @media (max-width:850px){
+	
+	.aside__description {
+        width: 26%;
+	    height: 65%;
+	}	
+	
+	.aside__description p{
+        width: 70%;
+	    height: 65%;
+	}
 	
 	.partners__wrapper {
 	    margin: 23px auto;
@@ -513,7 +550,11 @@ footer {
 	
     .partners__table {
 	    padding: 10px;
-    }	
+    }
+
+    .comments__description {
+    max-width: 27%;
+	}	
 }
 
 @media (max-width:767px){
@@ -607,8 +648,9 @@ footer {
 	    height:340px;
 	}
 	
-	aside__description {
+	.aside__description {
 	    width: 30%;
+		height: 100%;
         margin: 76px 5px 0px 0px;
 	}
 	
@@ -624,7 +666,7 @@ footer {
 	
 	.aside__description p{
 	    display: block;
-	    height: 150px;
+	    height: 28%;
 	    margin: 3px 0px 0px 54px;
 	    overflow: hidden;
 	}
@@ -759,12 +801,13 @@ footer {
 	
 	.aside__description {
         width: 100%;
-	    margin: -20px 0px 0px 13px;
+        height: 30%;
+	    margin: 10px 0px 0px 13px;
 	}
 	
 	.aside__description:first-child {
         width: 100%;
-	    margin: 73px 0px 0px 13px;
+	    margin: 10px 0px 0px 13px;
 	}
 	
 	.aside__description a{
@@ -776,10 +819,11 @@ footer {
     }
 	
 	.aside__description p{
+		height: 100px;
 	    margin-right: 35px;
 	}
 	
-		.dialog {
+	.dialog {
 	    height: 785px;	
 	}
 	
@@ -928,12 +972,12 @@ footer {
 	
 	.aside__description {
         width: 100%;
-	    margin: -20px 0px 0px 13px;
+	    margin: 10px 0px 0px 13px;
 	}
 	
 	.aside__description:first-child {
         width: 100%;
-	    margin: 73px 0px 0px 13px;
+	    margin: 10px 0px 0px 13px;
 	}
 	
 	.aside__description a{
@@ -992,13 +1036,14 @@ footer {
 	}
 	
 	.comments__description {
+		max-width: 100%;
         width: 100%;
-	    margin: 10px 0px 0px;
+	    margin: 5px 0px 0px;
 	}
 	
 	.comments__description:last-child {
         width: 100%;
-	    margin: 10px 0px 0px;
+	    margin: 5px 0px 0px;
 	}
 	
 	.comments__description h3 {
@@ -1006,6 +1051,7 @@ footer {
     }
 	
 	.comments__description p {
+		height: 60%;
 	    margin-right: 30px ;
     }
 	
@@ -1133,7 +1179,7 @@ footer {
 	}
 
     .partners__table {
-	    margin: 40px auto;
+	    margin: 20px 10px;
 	}
 	
 	.menu-footer {
